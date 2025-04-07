@@ -79,4 +79,37 @@ MIT License
 
 ⸻
 
-Let me know when you want help setting up the Python folder structure or building the first model.
+
+
+TTP-Trade-Transition-Program/
+│
+├── data/                         # Raw and processed data files
+│   ├── raw/                     # Uncleaned, original data
+│   └── processed/               # Cleaned, ready-for-analysis data
+│
+├── notebooks/                   # Jupyter notebooks for EDA and modeling
+│   ├── 01_data_exploration.ipynb
+│   └── 02_regression_modeling.ipynb
+│
+├── src/                         # Core Python scripts
+│   ├── data_pipeline/           # Scripts to scrape/load/clean data
+│   │   ├── fetch_nba_stats.py
+│   │   ├── fetch_trade_history.py
+│   │   └── clean_player_stats.py
+│   ├── models/                  # Regression, BPM metric, etc.
+│   │   ├── regression.py
+│   │   └── custom_bpm.py
+│   └── viz/                     # Visualization scripts
+│       └── plot_trade_impact.py
+│
+├── react-frontend/              # ReactJS frontend prototype
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       └── App.jsx
+│
+├── screenshots/                 # UI mockups or data visualizations
+├── README.md
+├── requirements.txt
+└── .gitignore
