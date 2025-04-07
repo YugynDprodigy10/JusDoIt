@@ -82,34 +82,35 @@ MIT License
 
 
 TTP-Trade-Transition-Program/
+├── data/                           # Datasets (raw & processed)
+│   ├── raw/                        # Raw game logs from nba_api
+│   └── processed/                  # Cleaned data with trade labels and TA-BPM
 │
-├── data/                         # Raw and processed data files
-│   ├── raw/                     # Uncleaned, original data
-│   └── processed/               # Cleaned, ready-for-analysis data
-│
-├── notebooks/                   # Jupyter notebooks for EDA and modeling
+├── notebooks/                      # Jupyter notebooks for EDA & charts
 │   ├── 01_data_exploration.ipynb
-│   └── 02_regression_modeling.ipynb
+│   ├── 02_regression_modeling.ipynb
+│   └── 03_trade_dashboard.ipynb
 │
-├── src/                         # Core Python scripts
-│   ├── data_pipeline/           # Scripts to scrape/load/clean data
-│   │   ├── fetch_nba_stats.py
-│   │   ├── fetch_trade_history.py
-│   │   └── clean_player_stats.py
-│   ├── models/                  # Regression, BPM metric, etc.
-│   │   ├── regression.py
-│   │   └── custom_bpm.py
-│   └── viz/                     # Visualization scripts
-│       └── plot_trade_impact.py
+├── src/                            # Core Python source code
+│   ├── data_pipeline/
+│   │   ├── fetch_nba_stats.py      # Pulls game logs via nba_api
+│   │   ├── clean_player_stats.py   # Labels trades, splits pre/post
+│   ├── models/
+│   │   ├── regression.py           # Models stat drop after trade
+│   │   └── custom_bpm.py           # Builds Trade-Adjusted BPM metric
+│   └── viz/
+│       └── plot_trade_impact.py    # Charts and visualizations
 │
-├── react-frontend/              # ReactJS frontend prototype
+├── streamlit_app/
+│   └── app.py                      # Streamlit dashboard interface
+│
+├── react-frontend/                 # ReactJS prototype for TTP services (coming soon)
 │   ├── public/
 │   └── src/
 │       ├── components/
-│       ├── pages/
-│       └── App.jsx
+│       └── pages/
 │
-├── screenshots/                 # UI mockups or data visualizations
+├── screenshots/                    # UI mockups and chart exports
 ├── README.md
 ├── requirements.txt
 └── .gitignore
