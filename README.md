@@ -35,22 +35,6 @@ An interactive full-stack web app that visualizes NBA players’ performance **b
 	npm install
 	npm start
 
-JusDoIt-dashboard/
-│
-├── backend/
-│   ├── server.py
-│   ├── data/processed/with_bpm.csv
-│   └── ...
-│
-├── react-frontend/
-│   ├── src/
-│   │   ├── pages/PlayerDashboard.jsx
-│   │   ├── components/StatCard.jsx
-│   │   └── ...
-│   └── public/
-│
-├── .gitignore
-└── README.md
 
 
 
