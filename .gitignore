@@ -1,0 +1,27 @@
+# Node
+node_modules/
+.env
+dist/
+build/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+*.sqlite3
+instance/
+.DS_Store
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
+.DS_Store
+
+# VSCode
+.vscode/

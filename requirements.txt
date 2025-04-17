@@ -1,0 +1,8 @@
+flask
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+nba_api
+python-dotenv
