@@ -13,7 +13,7 @@ An interactive full-stack web app that visualizes NBA players’ performance **b
 
 ## 📸 Screenshots
 
-> ![Dashboard](screenshots.png)
+> ![Dashboard](screenshot.png)
 
 ## 🚀 Tech Stack
 
@@ -32,7 +32,25 @@ An interactive full-stack web app that visualizes NBA players’ performance **b
 	pip install -r requirements.txt
 	python server.py
 	cd react-frontend
-npm install
-npm start
+	npm install
+	npm start
+
+JusDoIt-dashboard/
+│
+├── backend/
+│   ├── server.py
+│   ├── data/processed/with_bpm.csv
+│   └── ...
+│
+├── react-frontend/
+│   ├── src/
+│   │   ├── pages/PlayerDashboard.jsx
+│   │   ├── components/StatCard.jsx
+│   │   └── ...
+│   └── public/
+│
+├── .gitignore
+└── README.md
+
 
 
